@@ -1,0 +1,67 @@
+.select-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 50px;
+    margin-bottom: 2rem;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+ 
+}
+.new-img{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px #ECEAD3;
+    border-bottom: 20px solid #ECEAD3;
+    filter: sepia(60%);
+ 
+}
+
+.bookmark{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('../assets/images/icon-bookmark-empty.svg');
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover{
+       
+        filter: invert(1);
+        cursor: pointer;
+    }
+}
+
+.bookmarked{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('../assets/images/icon-bookmark-full.svg');
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover{
+       
+        filter: invert(1);
+        cursor: pointer;
+    }
+}
